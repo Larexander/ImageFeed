@@ -106,7 +106,7 @@
                     <navigationItem key="navigationItem" id="Mgh-2S-OiJ"/>
                     <connections>
                         <outlet property="tableView" destination="rHd-I8-utc" id="2lA-oe-A1Z"/>
-                        <segue destination="kc8-Lv-zzj" kind="show" identifier="ShowSingleImage" id="dkT-XW-b7o"/>
+                        <segue destination="kc8-Lv-zzj" kind="presentation" identifier="ShowSingleImage" id="dkT-XW-b7o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -201,21 +201,36 @@
         <!--Single Image View Controller-->
         <scene sceneID="5b1-G0-j1p">
             <objects>
-                <viewController id="kc8-Lv-zzj" customClass="SingleImageViewController" customModule="ImageFeed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="kc8-Lv-zzj" customClass="SingleImageViewController" customModule="ImageFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h3g-yP-avA">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="NlS-3C-Awk">
-                                <rect key="frame" x="0.0" y="103" width="430" height="746"/>
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32U-OC-fRv">
+                                <rect key="frame" x="8" y="67" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="30j-bH-BH6"/>
+                                    <constraint firstAttribute="width" constant="48" id="Lsy-7B-lqF"/>
+                                </constraints>
+                                <color key="tintColor" name="YP White (iOS)"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="chevron.backward"/>
+                                <connections>
+                                    <action selector="didTapBackButton" destination="kc8-Lv-zzj" eventType="touchUpInside" id="EsA-cD-Lmr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0TI-FQ-XBU"/>
                         <color key="backgroundColor" name="YP Black (iOS)"/>
                         <constraints>
                             <constraint firstItem="NlS-3C-Awk" firstAttribute="leading" secondItem="0TI-FQ-XBU" secondAttribute="leading" id="97B-LV-gDh"/>
-                            <constraint firstItem="0TI-FQ-XBU" firstAttribute="bottom" secondItem="NlS-3C-Awk" secondAttribute="bottom" id="YfB-PO-CaV"/>
-                            <constraint firstItem="NlS-3C-Awk" firstAttribute="top" secondItem="0TI-FQ-XBU" secondAttribute="top" id="cj1-Km-sP3"/>
+                            <constraint firstItem="32U-OC-fRv" firstAttribute="leading" secondItem="0TI-FQ-XBU" secondAttribute="leading" constant="8" id="9Qa-w6-Wxd"/>
+                            <constraint firstItem="32U-OC-fRv" firstAttribute="top" secondItem="0TI-FQ-XBU" secondAttribute="top" constant="8" id="TBX-Mp-sVj"/>
+                            <constraint firstAttribute="bottom" secondItem="NlS-3C-Awk" secondAttribute="bottom" id="YfB-PO-CaV"/>
+                            <constraint firstItem="NlS-3C-Awk" firstAttribute="top" secondItem="h3g-yP-avA" secondAttribute="top" id="cj1-Km-sP3"/>
                             <constraint firstItem="0TI-FQ-XBU" firstAttribute="trailing" secondItem="NlS-3C-Awk" secondAttribute="trailing" id="sXf-Qq-CrO"/>
                         </constraints>
                     </view>
@@ -226,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J12-dT-tAF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1109" y="-225"/>
+            <point key="canvasLocation" x="1107.9069767441861" y="-225.32188841201719"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="beT-Mh-Vbo">
@@ -255,6 +270,7 @@
     </scenes>
     <resources>
         <image name="0" width="200" height="132"/>
+        <image name="chevron.backward" width="9" height="16"/>
         <image name="like_button_on" width="42" height="42"/>
         <image name="logout_button" width="24" height="24"/>
         <image name="tab_editorial_active" width="21" height="22"/>
