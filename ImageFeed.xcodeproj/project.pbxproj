@@ -87,11 +87,11 @@
 		53D4182229A38C5700C65BD4 /* ImageFeed */ = {
 			isa = PBXGroup;
 			children = (
+				53D4182329A38C5700C65BD4 /* AppDelegate.swift */,
+				53D4182529A38C5700C65BD4 /* SceneDelegate.swift */,
 				53628DBC29C4357400C99526 /* SingleImageView */,
 				5347EE6629C1A451009C1E65 /* Profile */,
 				532AC9F629B0D9C800A24002 /* ImagesList */,
-				53D4182329A38C5700C65BD4 /* AppDelegate.swift */,
-				53D4182529A38C5700C65BD4 /* SceneDelegate.swift */,
 				53D4182E29A38C5900C65BD4 /* LaunchScreen.storyboard */,
 				53D4182929A38C5700C65BD4 /* Main.storyboard */,
 				53D4182C29A38C5900C65BD4 /* Assets.xcassets */,
