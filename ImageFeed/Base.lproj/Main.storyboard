@@ -20,8 +20,8 @@
                         <color key="selectedImageTintColor" name="YP White (iOS)"/>
                     </tabBar>
                     <connections>
-                        <segue destination="as1-m1-GqH" kind="relationship" relationship="viewControllers" id="DCF-Hp-Otn"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Bzw-Ye-r9Q"/>
+                        <segue destination="as1-m1-GqH" kind="relationship" relationship="viewControllers" id="DCF-Hp-Otn"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zXt-P0-TPj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -112,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-735" y="-225"/>
+            <point key="canvasLocation" x="-699" y="647"/>
         </scene>
         <!--Profile-->
         <scene sceneID="JfY-AC-5hf">
@@ -129,7 +129,7 @@
                     <navigationItem key="navigationItem" id="0Rc-v4-YE0"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-735" y="532"/>
+            <point key="canvasLocation" x="-699" y="-136"/>
         </scene>
         <!--Single Image View Controller-->
         <scene sceneID="5b1-G0-j1p">
